@@ -115,3 +115,10 @@ secuencia = ["uno","dos","tre"]
 for elemento in secuencia:
 	print(elemento)
 
+# FUNCIONES
+
+def mostrar_datos(param = "Hola", param2 = 300):
+	print(param)
+	print(param2)
+
+mostrar_datos()
