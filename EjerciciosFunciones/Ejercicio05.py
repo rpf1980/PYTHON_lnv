@@ -1,8 +1,21 @@
-#Realiza una funcion llamada recortar(numero, mínimo, máximo) que reciba tres
-#parámetros. El primero es el número a recortar, el segundo es el límite inferior y el
-#tercero el límite superior. La función tendrá que cumplir lo siguiente:
-# a) Devolver el límite inferior si el número es menor que éste.
-# b) Devolver el límite superior si el número es mayor que éste.
-# c) Devolver el número sin cambios si no se supera ningún límite.
-# d) Dichos parámetros se solicitan al usuario.
+#Realiza una funcion llamada recortar(numero, mï¿½nimo, mï¿½ximo) que reciba tres
+#parï¿½metros. El primero es el nï¿½mero a recortar, el segundo es el lï¿½mite inferior y el
+#tercero el lï¿½mite superior. La funciï¿½n tendrï¿½ que cumplir lo siguiente:
+# a) Devolver el lï¿½mite inferior si el nï¿½mero es menor que ï¿½ste.
+# b) Devolver el lï¿½mite superior si el nï¿½mero es mayor que ï¿½ste.
+# c) Devolver el nï¿½mero sin cambios si no se supera ningï¿½n lï¿½mite.
+# d) Dichos parï¿½metros se solicitan al usuario.
 
+numero = int(input("Escribe un nÃºmero: "))
+minimo = int(input("Escribe nÃºmero para el lÃ­minte inferior: "))
+maximo = int(input("Escribe nÃºmero para el lÃ­minte superior: "))
+def recortar(numero, maximo, minimo):
+
+	if(numero < minimo):
+		print(minimo)
+	elif(numero > maximo):
+		print(maximo)
+	else:
+		print(numero)
+
+print(str(recortar(numero, maximo, minimo)))
