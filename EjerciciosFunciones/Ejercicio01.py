@@ -6,4 +6,4 @@ altura = int(input("Escribe altura: "))
 def areaRectangulo(base, altura):
 	return base * altura
 
-print(str("Area = " + areaRectangulo(base, altura)))
+print(str("Area = " + str(areaRectangulo(base, altura))))

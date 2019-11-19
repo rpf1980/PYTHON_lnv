@@ -5,13 +5,7 @@ a = int(input("Escribe un primer entero: "))
 b = int(input("Escribe segundo entero: "))
 
 def intermedio(a, b):
-	
-	if(a < b):
-		intermedio = b // a
-	elif(b < a):
-		intermedio = a // b
-	else:
-		print("Los numero son iguales")
-
+	resultado = (a + b) / 2
+	return resultado
 		# Error en resultado --------------->
 print(intermedio(a, b))

@@ -2,7 +2,7 @@
 #solicitan al usuario, cumpla lo siguiente:
 #a) Si el primer numero es mayor que el segundo, debe devolver 1.
 #b) Si el primer numero es menor que el segundo, debe devolver -1.
-#c) Si ambos números son iguales, debe devolver un 0.
+#c) Si ambos nï¿½meros son iguales, debe devolver un 0.
 
 a = int(input("Escribe primer numero: "))
 b = int(input("Escribe segundo numero: "))

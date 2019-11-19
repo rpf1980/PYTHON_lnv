@@ -1,6 +1,6 @@
-#Diseña un programa que solicite la lectura de un número entre 0 y 10 (ambos
-#inclusive). Si el usuario teclea un número fuera del rango válido, el programa
-#solicitará nuevamente la introducción del valor cuantas veces sea necesario.
+#Diseï¿½a un programa que solicite la lectura de un nï¿½mero entre 0 y 10 (ambos
+#inclusive). Si el usuario teclea un nï¿½mero fuera del rango vï¿½lido, el programa
+#solicitarï¿½ nuevamente la introducciï¿½n del valor cuantas veces sea necesario.
 
 n = int(input("Escribe un numero de 0 a 10:  "))
 
