@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TrianguloClass", "TrianguloClass\TrianguloClass.pyproj", "{32980672-71D5-480C-BA1F-5C17BE691612}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32980672-71D5-480C-BA1F-5C17BE691612}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32980672-71D5-480C-BA1F-5C17BE691612}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A0E6405-7B98-4996-A924-BE40AB17F1CC}
+	EndGlobalSection
+EndGlobal
