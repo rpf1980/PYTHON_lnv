@@ -45,23 +45,18 @@ print()
 
 # Instanciamos la clase
 c = Cuenta(numDni, saldoB, inres)
+c.numCuenta = numCc
 
-print("Test función actualizar_saldo():")
-print(c.actualizar_saldo())
-print()
-
-print("Test función ingresar():")
-print()
+print("PROBAMOS FUNCIÓN INGRESAR")
 cantidadIngresas = float(input("Ingrese cantidad de efectivo: "))
 print(str(c.ingresar(cantidadIngresas)))
 print()
-
-print("Test función retirar():")
-print()
+print("PROBAMOS FUNCIÓN RETIRAR SALDO")
 cantidadRetiras = float(input(""))
 print(str(c.retirar(cantidadRetiras)))
 print()
-
-print("Test función mostrar_datos():")
-print(str(c.numCuenta()))
+print("PROBAMOS FUNCIÓN ACTUALIZAR SALDO")
+print(c.actualizar_saldo())
+print()
+print("MOSTRAMOS DATOS DE LA CUENTA")
 print(str(c.mostrar_datos()))
