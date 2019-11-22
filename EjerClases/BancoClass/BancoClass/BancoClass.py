@@ -16,38 +16,35 @@ class Cuenta:
 
 	def ingresar(self, ingreso):
 
-		self.saldo += ingreso
+		self.saldo = self.saldo + ingreso
 		return self.saldo
 
 	def retirar(self, cantidad):
 
 		if(self.saldo > cantidad):
 			self.saldo -= cantidad
-			res = "Efectivo retirado = " + cantidad + "\n" + "Saldo en cuenta = " + self.saldo 
-		return res 
+		else:
+			print("No tiene suficiente saldo")
+		return self.saldo 
 
 	def mostrar_datos(self):
 				
-		print("CC: " + str(cuenta.numCuenta))
-		print("DNI: " + cuenta.dni)
-		print("SALDO: " + str(cuenta.saldo))
-		print("INTERÉS: " + str(cuenta.interes))
-		print("SALDO ACTUALIZADO: " + str(cuenta.actualizar_saldo()))
-		print("INGRESO: " + str(cuenta.ingresar(1500)))
-		print("RETIRADA EFECTIVO: " + str(cuenta.retirar(388.34)))
+		print("CC: " + str(self.numCuenta))
+		print("DNI: " + self.dni)
+		print("SALDO: " + str(self.saldo))
 
 # PEDIMOS DATOS POR CONSOLA AL USUARIO
 print("INGRESA LOS DATOS DEL USUARIO:")
 print()
 
-numeroCuenta = int(input("CC: "))
-numeroDni = input("DNI: ")
-cantidadSaldo = float(input("SALDO: "))
-interesCuenta = float(input("INTERÉS: "))
+numCc = int(input("CC: "))
+numDni = input("DNI: ")
+saldoB = float(input("SALDO: "))
+inres = float(input("INTERÉS: "))
 print()
 
 # Instanciamos la clase
-c = Cuenta(numeroDni, cantidadSaldo, interesCuenta)
+c = Cuenta(numDni, saldoB, inres)
 
 print("Test función actualizar_saldo():")
 print(c.actualizar_saldo())
@@ -62,10 +59,9 @@ print()
 print("Test función retirar():")
 print()
 cantidadRetiras = float(input(""))
-print(c.retirar())
+print(str(c.retirar(cantidadRetiras)))
 print()
 
 print("Test función mostrar_datos():")
-print(c.mostrar_datos())
-print()
-
+print(str(c.numCuenta()))
+print(str(c.mostrar_datos()))
