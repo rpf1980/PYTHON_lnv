@@ -5,7 +5,7 @@ class Triangulo:
 		self.altura = altura
 
 	def perimetro(self):
-		return (self.lado * self.lado) / self.base
+		return (self.lado * self.lado) + self.base
 
 	def area(self):
 		return (self.base * self.altura) / 2
@@ -13,8 +13,14 @@ class Triangulo:
 	def muestra(self):
 		mostramos = "Lado: " + str(self.lado) + "\nBase: " + str(self.base) + "\nAltura: " + str(self.altura)
 		return mostramos
+
+# Pedimos datos al usuario
+print(input("INGRESE LOS DATOS DEL USUARIO (Presione Enter)"))
+l = float(input("Lado: "))
+b = float(input("Base: "))
+a = float(input("Altura: "))
 			 
-tri = Triangulo(12,5,23)
+tri = Triangulo(l,b,a)
 
 print("El perímetro del triángulo es = " + str(tri.perimetro()))
 print("El área del triángulo es = " + str(tri.area()))

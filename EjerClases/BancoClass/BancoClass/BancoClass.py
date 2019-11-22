@@ -22,7 +22,8 @@ class Cuenta:
 
 		if(self.saldo > cantidad):
 			self.saldo -= cantidad
-		return self.saldo #Quieres mostrar lo que queda en cuenta o MOSTRAR la cantidad que hemos retirado ?
+			res = "Efectivo retirado = " + cantidad + "\n" + "Saldo en cuenta = " + self.saldo 
+		return res 
 
 	def mostrar_datos(self):
 		
@@ -36,6 +37,10 @@ class Cuenta:
 		print("INGRESO: " + str(cuenta.ingresar(1500)))
 		print("RETIRADA EFECTIVO: " + str(cuenta.retirar(388.34)))
 
+# PEDIMOS DATOS POR CONSOLA AL USUARIO
+
+print(int(input("Nº CC: ")))
+numero_cc
 
 cuenta = Cuenta(9999, 0.21)
 print(cuenta.mostrar_datos())
