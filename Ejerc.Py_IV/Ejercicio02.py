@@ -3,3 +3,5 @@ seno, coseno, tangente, exponencial y logaritmo neperiano. La función preguntar
 al usuario el valor y la función a aplicar, y mostrará por pantalla una tabla con los
 enteros de 1 al valor introducido y el resultado de aplicar la función a esos enteros. """
 
+from math import sin, cos, tan, exp, log
+
