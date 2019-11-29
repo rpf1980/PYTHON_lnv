@@ -22,7 +22,7 @@ class Empleado:
 		return res
 
 	def devSueldoBruto(self):
-		res = self.sueldoBase + self.h_extras_mes
+		res = self.sueldoBase + (self.h_extras_mes * self.pago_hora_extra)
 		return res
 
 	def infoEmpleado(self):
